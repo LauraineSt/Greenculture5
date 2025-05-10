@@ -64,30 +64,30 @@
       </div>
 
   
-  <main class="main">
-    <h2 class="brand-name">Viajar com a GreenCulture</h2>
-    <div class="registration">
-      <form class="form" action="#" method="POST">
-        <div class="form__fields">
-          <input type="text" class="form__input" placeholder="Nome" aria-label="Nome" required>
-          <input type="email" class="form__input" placeholder="Email" aria-label="Email" required>
-          <input type="text" class="form__input" placeholder="Destino" aria-label="Destino" required>
-          <input type="date" class="form__input" placeholder="Data ida" aria-label="Data ida" required>
-          <input type="date" class="form__input" placeholder="Data regresso" aria-label="Data regresso" required>
-          <textarea class="form__input" placeholder="Observações" aria-label="Observações"></textarea>
-        </div>
-  
-        <div class="checkbox-container">
-            <div class="terms-checkbox">
-              <input type="checkbox" id="terms" class="checkbox-input" required>
-              <label for="terms" class="checkbox-label">Aceito os Termos</label>
+      <main class="main">
+        <h2 class="brand-name">Viajar com a GreenCulture</h2>
+        <div class="registration">
+          <form class="form" id="registerForm">
+            <div class="form__fields">
+              <input type="text" class="form__input" placeholder="Nome" aria-label="Nome" id="nome" required>
+              <input type="email" class="form__input" placeholder="Email" aria-label="Email" id="email" required>
+              <input type="text" class="form__input" placeholder="Destino" aria-label="Destino" id="destino" required>
+              <input type="date" class="form__input" aria-label="Data ida" id="dataIda" required>
+              <input type="date" class="form__input" aria-label="Data regresso" id="dataRegresso" required>
+              <textarea class="form__input" placeholder="Observações" aria-label="Observações" id="obs"></textarea>
             </div>
-          </div>
-  
-        <button type="submit" class="form__submit"><a href="msgsucesso.html">Submeter registo</a></button>
-      </form>
-    </div>
-  </main>
+      
+            <div class="checkbox-container">
+              <div class="terms-checkbox">
+                <input type="checkbox" id="terms" class="checkbox-input" required>
+                <label for="terms" class="checkbox-label">Aceito os Termos</label>
+              </div>
+            </div>
+      
+            <button type="submit" class="form__submit">Submeter registo</button>
+          </form>
+        </div>
+      </main>
       
    <!-- Footer -->
    <footer class="main-footer">
@@ -141,6 +141,26 @@
     </div>
   </footer>
 </div>
+<script>
+  document.getElementById('registerForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
 
+    // Validação básica (opcional porque os campos já têm "required")
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const destino = document.getElementById('destino').value.trim();
+    const dataIda = document.getElementById('dataIda').value;
+    const dataRegresso = document.getElementById('dataRegresso').value;
+    const termsChecked = document.getElementById('terms').checked;
+
+    if (!nome || !email || !destino || !dataIda || !dataRegresso || !termsChecked) {
+      alert('Por favor, preencha todos os campos obrigatórios e aceite os termos.');
+      return;
+    }
+
+    // Tudo válido: redireciona
+    window.location.href = 'msgsucesso.html';
+  });
+</script>
 </body>
 </html>
