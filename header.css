@@ -223,4 +223,67 @@
   line-height: 150%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.success-container {
+  max-width: 390px;
+  padding: 126px 20px 32px;
+  overflow: hidden;
+  background-color: #ecefed;
+}
+
+.success-content {
+  display: flex;
+  min-height: 441px;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.success-message {
+  color: #456452;
+  text-align: center;
+  font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+  margin: 0;
+}
+
+.success-subtitle {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.32px;
+  display: inline-block;
+}
+
+.logo-section {
+  align-self: center;
+  display: flex;
+  margin-top: 68px;
+  min-height: 72px;
+  width: 168px;
+  max-width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logo-wrapper {
+  display: flex;
+  width: 168px;
+  padding: 1px 2px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.company-logo {
+  aspect-ratio: 2.17;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
 
