@@ -46,3 +46,9 @@ if (this.checkValidity()) {
 });
 
 
+document.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', function(e) {
+    window.location.href = 'contactos.html';
+  });
+});
+

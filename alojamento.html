@@ -101,10 +101,10 @@
             </div>
           </section>
 
-          <section class="accommodations-list" aria-label="Lista de alojamentos">
-            <div class="accommodations-grid">
+          <div class="accommodations-wrapper">
+            <section class="accommodations-list">
 
-              <article class="accommodation-card">
+             <article class="accommodation-card">
                 <img src="https://cdn.builder.io/api/v1/image/assets/cea5c795618b4c5e9bb215ae1a38d255/18231501d396b35be74288b911d4fb0d9a34267a?placeholderIfAbsent=true" alt="Bangalô Rústico" class="card-image" />
                 <div class="card-content">
                   <h3 class="card-title">Bangalô Rústico</h3>
@@ -112,7 +112,7 @@
                   <div class="location">
                     <img src="https://cdn.builder.io/api/v1/image/assets/cea5c795618b4c5e9bb215ae1a38d255/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
                     <span class="location-text">Gerês, Portugal</span>
-                  </div>
+                  </div> 
                   <a href="https://www.airbnb.pt/rooms/1230332983005070002?search_mode=regular_search&adults=1&check_in=2025-05-04&check_out=2025-05-09&children=0&infants=0&pets=0&source_impression_id=p3_1744228734_P3XgnLv6HVfs1joA&previous_page_section_name=1000&federated_search_id=e2251bc0-f40d-4e31-a65d-9b62cd346c4b"
                      class="book-button"
                      target="_blank"
@@ -120,6 +120,7 @@
                     Reserve aqui
                   </a>
                 </div>
+                
               </article>
               <article class="accommodation-card">
                 <img src="https://cdn.builder.io/api/v1/image/assets/cea5c795618b4c5e9bb215ae1a38d255/5d1cf78cf0460b8e6ef97d9c4ce23345289d9d25?placeholderIfAbsent=true" alt="Prazeres Pacíficos" class="card-image" />
@@ -192,8 +193,8 @@
                 </div>
               </article>
 
-            </div>
-          </section>
+            </section>
+          </div>
 
           <section class="testimonials">
             <header class="testimonials-header">
@@ -335,56 +336,61 @@
         </section>
       </main>
 
-      <footer class="main-footer">
-        <div class="footer-content">
-          <div class="footer-links">
-            <div class="footer-logo">
-              <a href="index.html">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/fd6af29ec8c7d05d92c99db1b34ce73f92d51132?placeholderIfAbsent=true"
-                  alt="GreenCulture Logo"
-                  class="footer-logo-img"
-                />
-              </a>
-            </div>
-            <nav class="footer-nav">
-              <a href="sobre.html" class="footer-nav-link">Sobre</a>
-              <a href="contactos.html" class="footer-nav-link">Contactos</a>
-            </nav>
-          </div>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/fd6af29ec8c7d05d92c99db1b34ce73f92d51132?placeholderIfAbsent=true"
+              alt="GreenCulture Logo"
+              class="footer-logo-img"
+            />
+          </a>
         </div>
-        <div class="footer-credits">
-          <div class="divider"></div>
-          <div class="credits-row">
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">
-                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/df4e9f118e5c1a4d4f0f908422eb6bd695a80c6f?placeholderIfAbsent=true" alt="Facebook" class="social-icon" />
-              </a>
-              <a href="#" aria-label="Twitter">
-                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/45e68cf568e3742548363553534d04c2f0ba6d59?placeholderIfAbsent=true" alt="Twitter" class="social-icon" />
-              </a>
-              <a href="#" aria-label="Instagram">
-                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/99070886258680e295956025d27c12234ba37460?placeholderIfAbsent=true" alt="Instagram" class="social-icon" />
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/19bc79f96a8f7f247bc92681f20e16784fb91d68?placeholderIfAbsent=true" alt="LinkedIn" class="social-icon" />
-              </a>
-              <a href="#" aria-label="YouTube">
-                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/cc00d9451fc869bed6a3daad8abc02208d45e02c?placeholderIfAbsent=true" alt="YouTube" class="social-icon" />
-              </a>
-            </div>
-            <div class="legal-info">
-              <div class="legal-links">
-                <a href="politicaprivacidade.html" class="legal-link">Política de Privacidade</a>
-                <a href="termos.html" class="legal-link">Termos de Serviço</a>
-              </div>
-              <p class="copyright">
-                © Copyright 2025 · GreenCulture · All Rights Reserved
-              </p>
-            </div>
-          </div>
+        <nav class="footer-nav">
+          <a href="sobre.html" class="footer-nav-link">Sobre</a>
+          <a href="contactos.html" class="footer-nav-link">Contactos</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-credits">
+      <div class="divider"></div>
+      <div class="credits-row">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"
+            ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/df4e9f118e5c1a4d4f0f908422eb6bd695a80c6f?placeholderIfAbsent=true" alt="Facebook" class="social-icon"
+          /></a>
+          <a href="#" aria-label="Twitter"
+            ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/45e68cf568e3742548363553534d04c2f0ba6d59?placeholderIfAbsent=true" alt="Twitter" class="social-icon"
+          /></a>
+          <a href="#" aria-label="Instagram"
+            ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/99070886258680e295956025d27c12234ba37460?placeholderIfAbsent=true" alt="Instagram" class="social-icon"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/19bc79f96a8f7f247bc92681f20e16784fb91d68?placeholderIfAbsent=true" alt="LinkedIn" class="social-icon"
+          /></a>
+          <a href="#" aria-label="YouTube"
+            ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/cc00d9451fc869bed6a3daad8abc02208d45e02c?placeholderIfAbsent=true" alt="YouTube" class="social-icon"
+          /></a>
         </div>
-      </footer>
+      </div>
+    <div>
+      <div class="legal-info">
+        <div class="legal-links">
+          <a href="politicaprivacidade.html" class="legal-link">Política de Privacidade</a>
+          <a href="termos.html" class="legal-link">Termos de Serviço</a>
+        </div>
+      </div>
+          <p class="copyright">
+            © Copyright 2025 · GreenCulture · All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
     </div>
   </body>
 </html>
